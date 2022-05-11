@@ -37,7 +37,7 @@
 <script>
 import CommanderService from "../services/CommanderService";
 export default {
-  name: "Commander",
+  name: "commander",
   data() {
     return {
       currentCommander: null,
@@ -58,7 +58,7 @@ export default {
       CommanderService.delete(this.currentCommander.id)
       .then(response => {
         console.log(response.data);
-        this.$router.push({ name: "Commanders" });
+        this.$router.push({ name: "commanders" });
       })
       .catch(e => {
           console.log(e);

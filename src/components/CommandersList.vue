@@ -58,7 +58,7 @@ export default {
           console.log(e);
         });
     },
-    setActivecommander(commander, index) {
+    setActiveCommander(commander, index) {
       this.currentCommander= commander;
       this.currentIndex = commander? index : -1;
     }

@@ -13,11 +13,6 @@ const routes =  [
     component: () => import("./components/CommandersList")
   },
   {
-    path: "/",
-    name: "commanders-details",
-    component: () => import("./components/Commander")
-  },
-  {
     path: "/addc",
     name: "add-commanders",
     component: () => import("./components/AddCommander")
@@ -26,6 +21,11 @@ const routes =  [
     path: "/explorer/:id",
     name: "explorer-details",
     component: () => import("./components/Explorer")
+  },
+  {
+    path: "/commander/:id",
+    name: "commander-details",
+    component: () => import("./components/Commander")
   },
   {
     path: "/add",
