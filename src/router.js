@@ -7,6 +7,16 @@ const routes =  [
     component: () => import("./components/ExplorersList")
   },
   {
+    path: "/",
+    name: "commanders-details",
+    component: () => import("./components/Commander")
+  },
+  {
+    path: "/addc",
+    name: "add-commanders",
+    component: () => import("./components/AddCommander")
+  },
+  {
     path: "/explorer/:id",
     name: "explorer-details",
     component: () => import("./components/Explorer")
