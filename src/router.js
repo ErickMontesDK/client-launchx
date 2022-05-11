@@ -8,6 +8,12 @@ const routes =  [
   },
   {
     path: "/",
+    alias: "/commanders",
+    name: "commanders",
+    component: () => import("./components/CommandersList")
+  },
+  {
+    path: "/",
     name: "commanders-details",
     component: () => import("./components/Commander")
   },
